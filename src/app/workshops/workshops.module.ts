@@ -5,11 +5,11 @@ import { WorkshopsRoutingModule } from './workshops-routing.module';
 import { WorkshopsComponent } from './workshops.component';
 import { MentorsComponent } from './components/mentors/mentors.component';
 import { PartnersComponent } from './components/partners/partners.component';
-import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { PatreonModule } from '../patreon/patreon.module';
+import { HeroSectionModule } from '../hero-section/hero-section.module';
 
 @NgModule({
-  declarations: [WorkshopsComponent, MentorsComponent, PartnersComponent, HeroSectionComponent],
-  imports: [CommonModule, WorkshopsRoutingModule, ScullyLibModule, PatreonModule],
+  declarations: [WorkshopsComponent, MentorsComponent, PartnersComponent],
+  imports: [CommonModule, WorkshopsRoutingModule, ScullyLibModule, PatreonModule, HeroSectionModule],
 })
 export class WorkshopsModule { }

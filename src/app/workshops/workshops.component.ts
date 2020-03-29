@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router, ROUTES } from '@angular/router';
 import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
-import { tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 declare var ng: any;
@@ -21,6 +20,11 @@ export class WorkshopsComponent implements OnInit {
 
   constructor(private router: Router, private route: ActivatedRoute, private srs: ScullyRoutesService) {
     this.workshop$ = (this.srs.getCurrent() as Observable<ScullyRoute>);
+  }
+
+  openLink(link: string) {
+    link = link.indexOf("http") > -1 ? link : `http://${link}`;
+    window.open(link, "_blank");
   }
 
 }
