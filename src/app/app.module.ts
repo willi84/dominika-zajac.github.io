@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HomeComponent } from './home/home.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { TopNavigationComponent } from './top-navigation/top-navigation.componen
     AppComponent,
     HomeComponent,
     TopNavigationComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
