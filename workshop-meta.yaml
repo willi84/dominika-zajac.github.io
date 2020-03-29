@@ -1,0 +1,16 @@
+date: April 4th,2020
+city: Cracow
+country: Poland
+title: workshop-title
+sectionBg: assets/krakow/mentors/you.png
+participantsFormLink: add link here!
+mentorsFormLink: add link here!
+sponsorsCallMail: hello@ng-girls.org
+mentors:
+  - name: Anna Kowalska
+    company: DevilCorp
+    photo: assets/krakow/mentors/you.png
+partners:
+  - name: Devil Corp
+    logo: assets/krakow/mentors/you.png
+    link: add link here!

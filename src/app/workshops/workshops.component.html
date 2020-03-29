@@ -1,0 +1,13 @@
+<app-hero-section [date]="(workshop$ | async)?.date" [city]="(workshop$ | async)?.city"
+  [country]="(workshop$ | async)?.country" [participantsFormLink]="(workshop$ | async)?.participantsFormLink"
+  [mentorsFormLink]="(workshop$ | async)?.mentorsFormLink" [sectionBg]="(workshop$ | async)?.sectionBg">
+</app-hero-section>
+
+<div class="content-wrapper">
+  <scully-content></scully-content>
+
+  <app-mentors [mentors]="(workshop$ | async)?.mentors"></app-mentors>
+
+  <app-partners [partners]="(workshop$ | async)?.partners" [sponsorsCallMail]="(workshop$ | async)?.sponsorsCallMail">
+  </app-partners>
+</div>

@@ -1,0 +1,10 @@
+<h1>ngGirls Home</h1>
+
+<h3>Upcoming evets</h3>
+<ul>
+  <li *ngFor="let event of events$ | async">
+    <a [routerLink]="event.route">{{ event.title }}</a>
+  </li>
+</ul>
+
+<hr />

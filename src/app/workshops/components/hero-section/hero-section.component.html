@@ -1,0 +1,21 @@
+<div class="hero-image" [style.backgroundImage]="'url(' + sectionBg + ')'">
+    <div class="content-wrapper">
+        <div class="jumbotron">
+            <div class="hero-text">
+                <img class="logo logo-big" src='../../../../assets/logo_big.png'>
+                <img class="logo logo-name" src='../../../../assets/logo_name.png'>
+                <div class="animated hiding" data-animation="fadeInDown" data-delay="500"></div>
+                <p class="hero-description">
+                    {{date}}, {{city}}, {{country}}
+                </p>
+                <button class="btn" *ngIf="participantsFormLink as link" (click)="openLink(link)">
+                    APPLY FOR THE WORKSHOP
+                </button>
+
+                <button class="btn" *ngIf="mentorsFormLink as link" (click)="openLink(link)">
+                    CALL FOR MENTORS
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

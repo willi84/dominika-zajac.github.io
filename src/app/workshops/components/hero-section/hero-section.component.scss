@@ -1,0 +1,82 @@
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 550px;
+  }
+  
+  .logo {
+    margin: 20px auto 0;
+      background-size: 100% auto;
+  }
+  
+  .logo-big {
+    width: 450px;
+    height: 340px;
+    margin: 20px auto 0;
+    background-size: 100% auto;
+  }
+  
+  .logo-name {
+    margin: 20px auto 0;
+    background-size: 100% auto;
+    width: 330px;
+    height: 155px;
+  }
+  
+  
+  .btn {
+    color: #fff !important;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      text-transform: uppercase;
+      border: 0;
+      background: #4285f4 !important;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: inherit;
+      background-color: transparent;
+      font-size: 1em;
+      line-height: 1em;
+      text-align: center;
+      text-decoration: none;
+      z-index: 1;
+      font-weight: 500;
+      margin: 0 3px 10px;
+      font-weight: 500;
+      padding: 0.85em 1.1em;
+      border-radius: 0.2em;
+  }
+  
+  .hero-description {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-shadow: 2px 2px rgba(28,27,31,0.81);
+  }
