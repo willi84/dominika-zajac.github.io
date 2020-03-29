@@ -7,6 +7,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HomeComponent } from './home/home.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { FooterComponent } from './footer/footer.component';
+import { PatreonModule } from './patreon/patreon.module';
 
 
 @NgModule({
@@ -14,12 +15,13 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HomeComponent,
     TopNavigationComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScullyLibModule
+    ScullyLibModule,
+    PatreonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
