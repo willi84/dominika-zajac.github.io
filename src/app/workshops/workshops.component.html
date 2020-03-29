@@ -1,6 +1,14 @@
-<app-hero-section [date]="(workshop$ | async)?.date" [city]="(workshop$ | async)?.city"
-  [country]="(workshop$ | async)?.country" [participantsFormLink]="(workshop$ | async)?.participantsFormLink"
-  [mentorsFormLink]="(workshop$ | async)?.mentorsFormLink" [sectionBg]="(workshop$ | async)?.sectionBg">
+<app-hero-section [sectionBg]="(workshop$ | async)?.sectionBg">
+  <p class="hero-description">
+    {{(workshop$ | async)?.date}}, {{(workshop$ | async)?.city}}, {{(workshop$ | async)?.country}}
+  </p>
+  <button class="btn" *ngIf="(workshop$ | async)?.participantsFormLink as link" (click)="openLink(link)">
+    APPLY FOR THE WORKSHOP
+  </button>
+
+  <button class="btn" *ngIf="(workshop$ | async)?.mentorsFormLink as link" (click)="openLink(link)">
+    CALL FOR MENTORS
+  </button>
 </app-hero-section>
 
 <div class="content-wrapper">

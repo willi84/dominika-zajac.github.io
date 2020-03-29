@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { PatreonModule } from './patreon/patreon.module';
+import { HeroSectionModule } from './hero-section/hero-section.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PatreonModule } from './patreon/patreon.module';
     BrowserModule,
     AppRoutingModule,
     ScullyLibModule,
-    PatreonModule
+    PatreonModule,
+    HeroSectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
