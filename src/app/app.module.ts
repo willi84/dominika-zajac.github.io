@@ -9,6 +9,8 @@ import { TopNavigationComponent } from './top-navigation/top-navigation.componen
 import { FooterComponent } from './footer/footer.component';
 import { PatreonModule } from './patreon/patreon.module';
 import { HeroSectionModule } from './hero-section/hero-section.module';
+import { TeamSectionModule } from './team-section/team-section.module';
+import { PartnersSectionModule } from './partners-section/partners-section.module';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { HeroSectionModule } from './hero-section/hero-section.module';
     AppRoutingModule,
     ScullyLibModule,
     PatreonModule,
-    HeroSectionModule
+    HeroSectionModule,
+    TeamSectionModule,
+    PartnersSectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

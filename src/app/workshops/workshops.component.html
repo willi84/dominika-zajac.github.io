@@ -13,12 +13,12 @@
 
 <div class="content-wrapper">
   <scully-content></scully-content>
-
-  <app-mentors [mentors]="(workshop$ | async)?.mentors"></app-mentors>
-
-  <app-partners [partners]="(workshop$ | async)?.partners" [sponsorsCallMail]="(workshop$ | async)?.sponsorsCallMail">
-  </app-partners>
-
 </div>
+
+<app-team-section [team]="(workshop$ | async)?.mentors" [title]="'Meet the Mentors'"></app-team-section>
+
+<app-partners-section [partners]="(workshop$ | async)?.partners"
+  [sponsorsCallMail]="(workshop$ | async)?.sponsorsCallMail">
+</app-partners-section>
 
 <app-patreon></app-patreon>

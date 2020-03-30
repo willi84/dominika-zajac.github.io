@@ -14,6 +14,9 @@ mentors:
   - name: Amina Hasimbegovic
     company: Siemens Healthcare
     photo: assets/vienna/mentors/amina.jpg
+  - name: You
+    company: Siemens Healthcare
+    photo: assets/vienna/mentors/amina.jpg
 partners:
   - name: Angular Austria
     logo: assets/vienna/partners/Angular-Austria.png

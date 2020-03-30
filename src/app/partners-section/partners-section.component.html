@@ -1,0 +1,38 @@
+<section id="partners" class="partners-section">
+    <h3 class="section-title">Partners</h3>
+    <div class="partners-container" *ngIf="hosts">
+        <h4 class="partners-title">Hosted by</h4>
+        <!-- <ul>
+            <li *ngFor="let host of hosts">
+                <a href="host.link">
+                    <img src="{{host.logo}}" />
+                </a>
+            </li>
+        </ul> -->
+    </div>
+
+    <div class="partners-container" *ngIf="partners">
+        <h4 class="partners-title">With support of</h4>
+        <!-- <ul>
+            <li *ngFor="let partner of partners">
+                <a href="partner.link">
+                    <img src="{{partner.logo}}" />
+                </a>
+            </li>
+        </ul> -->
+    </div>
+
+    <div *ngIf="isDjangoLabelVisible" class="django-label">
+        <p>ngGirls is inspired by Django Girls and makes use of its resources</p>
+        <img src="../../assets/djangogirls.png" class="logo">
+    </div>
+
+    <div class="button-div">
+        <a href="mailto:{{sponsorsCallMail}}" target="_top">
+            <button class="btn">
+                BECOME A SPONSOR
+            </button>
+        </a>
+    </div>
+
+</section>
