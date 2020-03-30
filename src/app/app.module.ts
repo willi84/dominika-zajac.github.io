@@ -11,6 +11,7 @@ import { PatreonModule } from './patreon/patreon.module';
 import { HeroSectionModule } from './hero-section/hero-section.module';
 import { TeamSectionModule } from './team-section/team-section.module';
 import { PartnersSectionModule } from './partners-section/partners-section.module';
+import { AboutSectionComponent } from './about-section/about-section.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PartnersSectionModule } from './partners-section/partners-section.modul
     AppComponent,
     HomeComponent,
     TopNavigationComponent,
-    FooterComponent
+    FooterComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,
