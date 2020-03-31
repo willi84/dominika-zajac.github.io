@@ -11,6 +11,5 @@ mentors:
     company: DevilCorp
     photo: assets/krakow/mentors/you.png
 partners:
-  - name: Devil Corp
-    logo: assets/krakow/mentors/you.png
+  - logo: assets/krakow/mentors/you.png
     link: add link here!

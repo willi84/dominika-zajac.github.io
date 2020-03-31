@@ -20,6 +20,8 @@ mentors:
 partners:
   - name: Angular Austria
     logo: assets/vienna/partners/Angular-Austria.png
+  - name: Angular Austria
+    logo: assets/vienna/partners/Angular-Austria.png
 ---
 
 # ngGirls @ Vienna ONLINE
