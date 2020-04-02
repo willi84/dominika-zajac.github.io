@@ -1,10 +1,17 @@
 <app-hero-section [sectionBg]="'../../../../assets/eclipse.jpg'">
-  <h3 class="upcoming-text">Upcoming events</h3>
-  <ul>
-    <li *ngFor="let event of events$ | async">
-      <h3 class="workshop-link"><a [routerLink]="event.route">{{ event.title }}</a></h3>
-    </li>
-  </ul>
+  <h3 class="upcoming-text">Upcoming events:</h3>
+  <div class="events-list">
+    <div *ngFor="let event of events$ | async">
+      <a [routerLink]="event.route">
+        <div class="workshop-card" [style.backgroundImage]="'url(' + event.sectionBg + ')'">
+          <div class="workshop-link" >
+            <b>{{ event.title }}</b><br/>
+            {{event.date}}
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 </app-hero-section>
 
 <app-patreon></app-patreon>

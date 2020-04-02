@@ -1,11 +1,30 @@
 
 @import '../../styles.scss';
 
-.workshop-link a {
-    color: white;
-    font-size: 30px;
-}
+
 
 .upcoming-text {
     font: 40px;
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.workshop-card {
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    margin-top: 10px;
+    border: 1px solid white;
+    background-size: cover;
+    .workshop-link {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        padding: 15px;
+    }
 }

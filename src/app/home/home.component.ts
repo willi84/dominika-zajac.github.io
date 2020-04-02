@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private srs: ScullyRoutesService) { }
 
   ngOnInit() {
+    this.srs.available$.subscribe(val => console.log(val));
     this.events$ = this.srs.available$.pipe(
       map(routeList => {
         return routeList.filter((route: ScullyRoute) =>

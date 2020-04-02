@@ -24,9 +24,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    max-width: 550px;
   }
   
+  .logo-section {
+    max-width: 550px;
+    margin: auto;
+  }
+
   .logo {
     margin: 20px auto 0;
     background-size: 100% auto;
