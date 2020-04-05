@@ -1,7 +1,8 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    z-index: 99;
+  height: 100%;
+  margin: 0;
+  z-index: 99;
+  font-family: "Roboto", sans-serif;
 }
 
 // Font weights
@@ -59,34 +60,42 @@ $sprites-dir: $image-dir + "/sprites";
 $logos-sprite: $sprites-dir + "/logos.svg";
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    color: #fff !important;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      text-transform: uppercase;
-      border: 0;
-      background: #4285f4 !important;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      border: none;
-      outline: none;
-      color: inherit;
-      background-color: transparent;
-      font-size: 1em;
-      line-height: 1em;
-      text-align: center;
-      text-decoration: none;
-      z-index: 1;
-      font-weight: 500;
-      margin: 0 3px 10px;
-      font-weight: 500;
-      padding: 0.85em 1.1em;
-      border-radius: 0.2em;
-  }
-  
+  color: #fff !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  border: 0;
+  background: #4285f4 !important;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: inherit;
+  background-color: transparent;
+  font-size: 1em;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  font-weight: 500;
+  margin: 0 3px 10px;
+  font-weight: 500;
+  padding: 0.85em 1.1em;
+  border-radius: 0.2em;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
