@@ -9,11 +9,11 @@ export class TopNavigationComponent implements OnInit {
 
   navLinks = [
     { name: 'HOME', link: './' },
-    { name: 'ABOUT', link: './' },
-    { name: 'BE A PART', link: './' },
-    { name: 'TEAM', link: './' },
-    { name: 'PARTNERS', link: './' },
-    { name: 'FAQ', link: './' },
+    { name: 'ABOUT', link: './#about' },
+    { name: 'BE A PART', link: './#description' },
+    { name: 'TEAM', link: './#team' },
+    { name: 'PARTNERS', link: './#partners' },
+    { name: 'FAQ', link: './faq' },
   ];
 
   constructor() { }

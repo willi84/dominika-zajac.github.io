@@ -14,10 +14,8 @@ Repository's goal is to rewrite current ng-girls page to Angular and Scully. Tha
 ## Git Flow
 - Create feature branch from `base-branch`
 - Add your changes
-- When ready, create PR to `base-branch`
-- You need at least 1 approval to merge your changes
+- When ready, merge to `base-branch`
 - After merging, GitHub Action will rebuild project and deploy your changes to webpage
-
 
 ## Adding new workshop 
 - `npm checkout -b <your-workshop-name>-branch`
