@@ -1,4 +1,4 @@
-require('./extraPlugin/workshops-add-flex');
+require('./extraPlugin/workshop-add-flex');
 
 exports.config = {
   projectRoot: "./src",

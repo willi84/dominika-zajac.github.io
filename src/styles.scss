@@ -100,3 +100,9 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+flex-group[flex-width="50%"]{
+  display: flex;
+  > [flex-item] {
+    width: 50%;
+  }
+}

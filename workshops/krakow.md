@@ -40,10 +40,11 @@ We want to give you an opportunity to learn how to program and become a programm
 
 
 ### Who is it for?
+[flex:50%]
 Are you a woman interested in learning how to build web applications with the latest technologies? We have good news for you: We are holding a one-day workshop for beginners! It will take place on Tuesday, March 31st 2020 and will be fully virtual, meaning you can join from anywhere using your computer and an internet connection..
 
 We believe that the IT industry will greatly benefit from bringing more women into technology. We want to give you an opportunity to learn how to program and become a programmer.
-
+[flex:end]
 During the workshop you will build and deploy your very first Angular Web Application! Angular is an open-source platform for building web application, developed by Google and the community. It gives various tools to easily create a dynamic, interactive app that can run on desktop browses, mobile and even robots!
 To participate in the workshop you'll need some basic knowledge in web development: HTML, CSS and basic JavaScript or any other programming language. If you're a total beginner, here are some resources to catch up.
 
