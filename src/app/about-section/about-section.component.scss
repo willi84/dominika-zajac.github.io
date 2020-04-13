@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .section {
   margin-top: 30px;
   padding-top: 10px;
@@ -7,7 +9,14 @@
   .section-title {
     font-size: 80px;
     font-weight: 400;
-    margin: 100px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    line-height: normal;
+    @include sm {
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 50px;
+    }
   }
 
   .cards-list {
@@ -22,6 +31,7 @@
     width: 350px;
     height: 300px;
     padding: 30px 50px;
+    margin-bottom: 20px;
   }
 
   .subsection-title {
@@ -49,7 +59,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    @media (max-width: 767px) {
+    @include sm {
       flex-direction: column;
       width: 90%;
     }

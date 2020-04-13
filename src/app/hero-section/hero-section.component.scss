@@ -41,6 +41,10 @@
     height: 340px;
     margin: 20px auto 0;
     background-size: 100% auto;
+    @include sm {
+      height: 140px;
+      width: auto;
+    }
   }
   
   .logo-name {
@@ -48,4 +52,8 @@
     background-size: 100% auto;
     width: 330px;
     height: 155px;
+    @include sm {
+      width: 180px;
+      height: auto;
+    }
   }
