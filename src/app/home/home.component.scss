@@ -3,6 +3,9 @@
 
 .upcoming-text {
     font-size: 26px;
+    @include sm {
+        font-size: 16px;
+    }
 }
 
 .events-list {
