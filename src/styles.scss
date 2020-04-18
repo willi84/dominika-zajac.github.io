@@ -1,5 +1,7 @@
-body,
-html {
+@import './breakpoints';
+@import './mixins';
+
+body, html {
   height: 100%;
   margin: 0;
   z-index: 99;
@@ -97,9 +99,17 @@ a {
 html,
 body {
   height: 100%;
+  color: #333;
 }
 
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+flex-group[flex-width="50%"]{
+  display: flex;
+  > [flex-item] {
+    width: 50%;
+  }
 }

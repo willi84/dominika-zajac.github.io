@@ -29,6 +29,9 @@
   .logo-section {
     max-width: 550px;
     margin: auto;
+    @include sm {
+      max-width: 200px;
+    }
   }
 
   .logo {
@@ -41,6 +44,10 @@
     height: 340px;
     margin: 20px auto 0;
     background-size: 100% auto;
+    @include sm {
+      height: 100px;
+      width: auto;
+    }
   }
   
   .logo-name {
@@ -48,4 +55,8 @@
     background-size: 100% auto;
     width: 330px;
     height: 155px;
+    @include sm {
+      width: 140px;
+      height: auto;
+    }
   }

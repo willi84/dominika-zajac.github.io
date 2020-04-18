@@ -7,8 +7,9 @@ $footer-links-color: #8b8b8b;
     padding: 40px 52px 13px;
     border-top: 1px solid #e7e7e7;
     background-color: $footer-background-color;
-    @media (max-width: 767px) {
+    @include sm {
         padding: 26px 20px 13px;
+        
     }
     h5 {
         font-size: 18px;
@@ -56,8 +57,12 @@ $footer-links-color: #8b8b8b;
     display: flex;
     width: 80%;
     margin: auto;
+    @include sm {
+        flex-direction: column;
+    }
     .footer-section {
         flex-grow: 1;
         text-align: center;
+        margin-bottom: 25px;
     }
 }

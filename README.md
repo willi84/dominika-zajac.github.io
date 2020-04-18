@@ -16,7 +16,7 @@ Repository's goal is to rewrite current ng-girls page to Angular and Scully. Tha
 - Add your changes
 - When ready, merge to `base-branch`
 - After merging, GitHub Action will rebuild project and deploy your changes to webpage
-
+ 
 ## Adding new workshop 
 - `npm checkout -b <your-workshop-name>-branch`
 - `npm run new-event`

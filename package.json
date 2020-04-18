@@ -11,6 +11,8 @@
     "scully": "scully",
     "scully:serve": "scully serve",
     "scully:all": "npm run build && npm run scully -- --nw && npm run scully:serve",
+    "scully:build": "npm run build && npm run scully -- --nw",
+    "scully:dev": "npm run scully -- --nw",
     "new-event": "ng g @scullyio/init:post --metaDataFile='workshop-meta.yaml' --target=workshops"
   },
   "private": true,
