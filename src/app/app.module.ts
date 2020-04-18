@@ -21,6 +21,8 @@ import { DialogPersonComponent } from './dialog-person/dialog-person.component';
 import {FormsModule} from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { FaqComponent } from './faq/faq.component';
+import { CocComponent } from './coc/coc.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     TopNavigationComponent,
     FooterComponent,
     AboutSectionComponent,
-    DialogPersonComponent
+    DialogPersonComponent,
+    FaqComponent,
+    CocComponent
   ],
   imports: [
     BrowserModule,
