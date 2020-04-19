@@ -9,7 +9,9 @@ const addFlex = async (html, options) => {
   try {
     const dom = new JSDOM(html);
     const {window} = dom;
+    // detect if h1, h2 or h3 first, normalize others
     const anchors = [...window.document.querySelectorAll('h3')];
+    // TODO: h3, h2
     const paragraphs =  [...window.document.querySelectorAll('p, h4, ul')];
     let lenParagraphs = paragraphs.length;
     // anchors.forEach(a => {
