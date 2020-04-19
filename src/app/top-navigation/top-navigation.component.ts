@@ -14,6 +14,7 @@ export class TopNavigationComponent implements OnInit {
     { name: 'TEAM', link: './#team' },
     { name: 'PARTNERS', link: './#partners' },
     { name: 'FAQ', link: './faq' },
+    { name: 'BLOG', link: './blog'}
   ];
 
   constructor() { }

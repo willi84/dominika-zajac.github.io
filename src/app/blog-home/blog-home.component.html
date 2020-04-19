@@ -1,0 +1,8 @@
+<div class="content-wrapper">
+    <h1>All articles</h1>
+    <div *ngFor="let post of posts$ | async">
+        <a [routerLink]="post.route">
+        {{post?.title}}
+        </a>
+    </div>
+</div>

@@ -26,3 +26,12 @@ Repository's goal is to rewrite current ng-girls page to Angular and Scully. Tha
 - create folder `src\assets\<your-workshop-name>` and add all assets there
 - Run `npm install && npm run scully:all` to test it locally
 - When ready create PR to `base-branch`
+
+## Adding new blog post
+- `npm checkout -b <your-post-name>-branch`
+- `npm run new-post`
+- Prompt will ask you for the event name.
+- Go to blog folder and open file <post-name>.md
+- update properties in md file
+- Run `npm install && npm run scully:all` to test it locally
+- When ready create PR to `base-branch`

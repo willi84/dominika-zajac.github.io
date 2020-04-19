@@ -23,6 +23,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FaqComponent } from './faq/faq.component';
 import { CocComponent } from './coc/coc.component';
+import { BlogHomeComponent } from './blog-home/blog-home.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { CocComponent } from './coc/coc.component';
     AboutSectionComponent,
     DialogPersonComponent,
     FaqComponent,
-    CocComponent
+    CocComponent,
+    BlogHomeComponent
   ],
   imports: [
     BrowserModule,
