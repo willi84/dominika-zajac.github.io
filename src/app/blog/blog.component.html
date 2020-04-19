@@ -1,4 +1,4 @@
-<div class="coc-image" [style.backgroundImage]="'url(' + cocImage + ')'">
+<div class="coc-image" [style.backgroundImage]="'url(' + (article$ | async)?.image + ')'">
     <div class="content-wrapper">
         <div class="header-text">
             <h1>{{ (article$ | async)?.title }} </h1>

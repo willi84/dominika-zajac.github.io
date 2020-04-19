@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   events$: Observable<ScullyRoute[]>;
   organizers = organizers;
   partners = partners;
+  posts$: Observable<ScullyRoute[]>;
 
   constructor(private srs: ScullyRoutesService) { }
 
@@ -25,5 +26,12 @@ export class HomeComponent implements OnInit {
         );
       })
     );
+    this.posts$ = this.srs.available$.pipe(
+      map(routeList => {
+        return routeList.filter((route: ScullyRoute) => 
+        route.route.startsWith(`/blog/`))
+      }),
+      map(posts => posts.slice(0, 3))
+    )
   }
 }

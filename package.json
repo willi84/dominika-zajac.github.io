@@ -13,7 +13,8 @@
     "scully:all": "npm run build && npm run scully -- --nw && npm run scully:serve",
     "scully:build": "npm run build && npm run scully -- --nw",
     "scully:dev": "npm run scully -- --nw",
-    "new-event": "ng g @scullyio/init:post --metaDataFile='workshop-meta.yaml' --target=workshops"
+    "new-event": "ng g @scullyio/init:post --metaDataFile='templates/workshop-meta.yaml' --target=workshops",
+    "new-post": "ng g @scullyio/init:post --metaDataFile='templates/post-meta.yaml' --target=blog"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +25,7 @@
     "@angular/compiler": "~9.1.0",
     "@angular/core": "~9.1.0",
     "@angular/forms": "~9.1.0",
-    "@angular/material": "^9.2.0",
+    "@angular/material": "^9.2.1",
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",

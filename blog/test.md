@@ -1,7 +1,9 @@
 ---
 title: test
-description: blog description
+description: Croissant fruitcake pie candy canes pudding. Chocolate pastry sugar plum cheesecake gummi bears biscuit pastry. 
 publish: true
+author: Dominika Zając
+image: ./assets/djangogirls1.jpg
 ---
 
 # test

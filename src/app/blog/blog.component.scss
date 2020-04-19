@@ -19,11 +19,13 @@
 .coc-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   height: 55%;
+  line-height: normal;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  line-height: normal;
 
   .header-text {
       text-align: center;

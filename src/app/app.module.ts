@@ -13,6 +13,9 @@ import {TeamSectionModule} from './team-section/team-section.module';
 import {PartnersSectionModule} from './partners-section/partners-section.module';
 import {AboutSectionComponent} from './about-section/about-section.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FaqComponent } from './faq/faq.component';
+import { CocComponent } from './coc/coc.component';
+import { BlogHomeComponent } from './blog-home/blog-home.component';
 
 // Material
 import {MatIconModule} from '@angular/material/icon';
@@ -21,9 +24,8 @@ import { DialogPersonComponent } from './dialog-person/dialog-person.component';
 import {FormsModule} from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { FaqComponent } from './faq/faq.component';
-import { CocComponent } from './coc/coc.component';
-import { BlogHomeComponent } from './blog-home/blog-home.component';
+import {MatCardModule} from '@angular/material/card';
+import { PostPreviewComponent } from './post-preview/post-preview.component'
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { BlogHomeComponent } from './blog-home/blog-home.component';
     DialogPersonComponent,
     FaqComponent,
     CocComponent,
-    BlogHomeComponent
+    BlogHomeComponent,
+    PostPreviewComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { BlogHomeComponent } from './blog-home/blog-home.component';
     HttpClientModule,
     FormsModule,
     MatDialogModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

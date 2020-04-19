@@ -14,8 +14,6 @@ import { Observable } from 'rxjs';
 export class BlogComponent implements OnInit {
   ngOnInit() {}
 
-  cocImage = '../../../../assets/djangogirls1.jpg';
-
   article$;
 
   constructor(private router: Router, private route: ActivatedRoute, private srs: ScullyRoutesService) {

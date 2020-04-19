@@ -1,7 +1,9 @@
 ---
 title: hello-world
-description: blog description
+description: Lollipop pudding lollipop dragée jelly beans chupa chups wafer ice cream.
 publish: true
+author: Dominika Zając
+image: ./assets/vienna/vienna.jpg
 ---
 
 # hello-world
