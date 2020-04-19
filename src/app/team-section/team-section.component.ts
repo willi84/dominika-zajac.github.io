@@ -11,6 +11,7 @@ export class TeamSectionComponent implements OnInit {
 
   @Input() team;
   @Input() title: string;
+  @Input() showPopups = false;
 
   constructor(public dialog: MatDialog) {
   }
@@ -19,6 +20,7 @@ export class TeamSectionComponent implements OnInit {
   }
 
   openDialog(person): void {
+    if (!this.showPopups) return;
     const dialogRef = this.dialog.open(DialogPersonComponent, {
       width: '740px',
       data: person

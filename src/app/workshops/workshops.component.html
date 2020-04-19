@@ -15,7 +15,11 @@
   <scully-content></scully-content>
 </div>
 
-<app-team-section [team]="(workshop$ | async)?.mentors" [title]="'Meet the Mentors'"></app-team-section>
+<app-team-section 
+  [team]="(workshop$ | async)?.mentors" 
+  [title]="'Meet the Mentors'"
+  [showPopups]="false"
+></app-team-section>
 
 <app-partners-section [partners]="(workshop$ | async)?.partners"
   [sponsorsCallMail]="(workshop$ | async)?.sponsorsCallMail">

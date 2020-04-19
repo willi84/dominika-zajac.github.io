@@ -25,6 +25,9 @@ export class AboutSectionComponent implements OnInit {
     }
   ];
 
+  mailAddress = "hello@ng-girls.org";
+  newsletterLink = "https://docs.google.com/forms/d/e/1FAIpQLSdWw5cOjjGNM7cxUpk7F7fYBZU4_1okOH9sYlwU-WcY6U8Sjg/viewform";
+
   constructor() { }
 
   ngOnInit(): void {
