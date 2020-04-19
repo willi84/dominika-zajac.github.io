@@ -2,7 +2,7 @@
   <h3 class="upcoming-text">Upcoming events:</h3>
   <div class="events-list">
     <div *ngFor="let event of events$ | async">
-      <a [routerLink]="event.route">
+      <a [routerLink]="event.route" *ngIf="!event.archived">
         <div class="workshop-card" [style.backgroundImage]="'url(' + event.sectionBg + ')'">
           <div class="card-overlay">
             <div class="workshop-link" >
