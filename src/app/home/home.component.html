@@ -3,7 +3,7 @@
   <div class="events-list">
     <div *ngFor="let event of events$ | async">
       <a [routerLink]="event.route" *ngIf="!event.archived">
-        <div class="workshop-card" [style.backgroundImage]="'url(' + event.sectionBg + ')'">
+        <div class="workshop-card" [style.backgroundImage]="'url(' + (event.sectionBgThumb ?  event.sectionBgThumb : event.sectionBg) + ')'">
           <div class="card-overlay">
             <div class="workshop-link" >
               <b>{{ event.title }}</b><br/>

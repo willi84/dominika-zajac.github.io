@@ -1,8 +1,10 @@
+archived: false
 date: April 4th,2020
 city: Cracow
 country: Poland
 title: workshop-title
-sectionBg: assets/krakow/mentors/you.png
+sectionBg: assets/sample/sample.jpg
+sectionBgThumb: assets/sample/sample_small.jpg
 participantsFormLink: add link here!
 mentorsFormLink: add link here!
 sponsorsCallMail: hello@ng-girls.org

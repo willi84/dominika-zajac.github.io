@@ -4,6 +4,7 @@ city: Vienna
 country: Austria
 title: vienna online
 sectionBg: assets/vienna/vienna.jpg
+sectionBgThumb: assets/vienna/vienna_small.jpg
 participantsFormLink: https://docs.google.com/forms/d/e/1FAIpQLSeKa6lz2c4wtwTZy7CaFCQV5sPu5TDwUjw9qp_CH5C_HPhEpw/closedform
 mentorsFormLink: https://docs.google.com/forms/d/e/1FAIpQLSeAc9E-gf3IZnVEMA9rUOEERBJRZDMNMbHWvz9lmdXlskWzZQ/closedform
 sponsorsCallMail: test@test.pl
