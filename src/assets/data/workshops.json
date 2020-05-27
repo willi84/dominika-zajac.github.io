@@ -1,0 +1,27 @@
+[{
+  "id": 1,
+  "title": "Australia",
+  "background": "assets/krakow/krakow.jpg",
+  "date": "Saturday May 16th, 2020",
+  "location": "Online",
+  "archived": "false",
+  "route":"australia"
+},
+{
+  "id": 2,
+  "title": "ngVikings",
+  "background": "assets/krakow/krakow.jpg",
+  "date": "Saturday May 23rd, 2020",
+  "location": "Online",
+  "archived": "false",
+  "route":"ngVikings"
+},
+{
+  "id": 2,
+  "title": "Budapest",
+  "background": "assets/krakow/krakow.jpg",
+  "date": "Saturday June 8th, 2020",
+  "location": "Online",
+  "archived": "false",
+  "route":"budapest"
+}]

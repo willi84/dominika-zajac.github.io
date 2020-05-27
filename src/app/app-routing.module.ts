@@ -7,7 +7,11 @@ import { CocComponent } from './coc/coc.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'workshops', loadChildren: () => import('./workshops/workshops.module').then(m => m.WorkshopsModule) },
+  //{ path: 'workshops', loadChildren: () => import('./workshops/workshops.module').then(m => m.WorkshopsModule) },
+  {
+    path: 'workshops/:workshopId',
+    loadChildren: () => import('./workshops/workshops.module').then(m => m.WorkshopsModule) 
+},
   // test
   { path: 'krakow',   redirectTo: '/workshops/krakow', pathMatch: 'full' },
   { path: 'faq', component: FaqComponent },

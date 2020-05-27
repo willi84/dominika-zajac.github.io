@@ -1,9 +1,9 @@
 <app-hero-section [sectionBg]="'../../../../assets/eclipse.jpg'">
   <h3 class="upcoming-text">Upcoming events:</h3>
   <div class="events-list">
-    <div *ngFor="let event of events$ | async">
-      <a [routerLink]="event.route" *ngIf="!event.archived">
-        <div class="workshop-card" [style.backgroundImage]="'url(' + (event.sectionBgThumb ?  event.sectionBgThumb : event.sectionBg) + ')'">
+    <div *ngFor="let event of upcomingWorkshop$ | async">
+      <a [routerLink]="['workshops',event.route]">
+        <div class="workshop-card" [style.backgroundImage]="'url(' + (event.background ?  event.background : event.background) + ')'">
           <div class="card-overlay">
             <div class="workshop-link" >
               <b>{{ event.title }}</b><br/>
@@ -18,9 +18,10 @@
 
 <app-patreon></app-patreon>
 
+
 <app-about-section></app-about-section>
 
-<app-team-section 
+<!-- <app-team-section 
   [team]="organizers" 
   [title]="'Organizing Team'"
   [showPopups]="true"
@@ -29,7 +30,7 @@
 <app-partners-section 
   [isDjangoLabelVisible]="true" 
   [partners]="partners">
-</app-partners-section>
+</app-partners-section> -->
 
 <app-blog-home 
   [postLimit]="3">

@@ -19,12 +19,13 @@ export class WorkshopsComponent implements OnInit {
   workshop$;
 
   constructor(private router: Router, private route: ActivatedRoute, private srs: ScullyRoutesService) {
+    console.log(this.srs.getCurrent());
     this.workshop$ = (this.srs.getCurrent() as Observable<ScullyRoute>);
   }
 
-  openLink(link: string) {
-    link = link.indexOf("http") > -1 ? link : `http://${link}`;
-    window.open(link, "_blank");
-  }
+  // openLink(link: string) {
+  //   link = link.indexOf("http") > -1 ? link : `http://${link}`;
+  //   window.open(link, "_blank");
+  // }
 
 }

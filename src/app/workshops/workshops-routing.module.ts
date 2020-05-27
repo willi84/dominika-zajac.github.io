@@ -3,16 +3,18 @@ import {Routes, RouterModule} from '@angular/router';
 
 import {WorkshopsComponent} from './workshops.component';
 
-const routes: Routes = [
-  {
-    path: ':workshopId',
-    component: WorkshopsComponent,
-  },
-  {
-    path: '**',
-    component: WorkshopsComponent,
-  }
-];
+// const routes: Routes = [
+//   {
+//     path: ':workshopId',
+//     component: WorkshopsComponent,
+//   },
+//   {
+//     path: '**',
+//     component: WorkshopsComponent,
+//   }
+// ];
+const routes: Routes = [{ path: '', component: WorkshopsComponent }];
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

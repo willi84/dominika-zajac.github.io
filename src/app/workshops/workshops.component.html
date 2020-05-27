@@ -1,4 +1,4 @@
-<app-hero-section [sectionBg]="(workshop$ | async)?.sectionBg">
+This is the new page <!-- <app-hero-section [sectionBg]="(workshop$ | async)?.sectionBg">
   <p class="hero-description">
     {{(workshop$ | async)?.date}}, {{(workshop$ | async)?.city}}, {{(workshop$ | async)?.country}}
   </p>
@@ -9,13 +9,14 @@
   <button class="btn" *ngIf="(workshop$ | async)?.mentorsFormLink as link" (click)="openLink(link)">
     CALL FOR MENTORS
   </button>
-</app-hero-section>
+</app-hero-section> -->
 
+<!-- 
 <div class="content-wrapper workshop-description">
   <scully-content></scully-content>
-</div>
+</div> -->
 
-<app-team-section 
+<!-- <app-team-section 
   [team]="(workshop$ | async)?.mentors" 
   [title]="'Meet the Mentors'"
   [showPopups]="false"
@@ -23,6 +24,6 @@
 
 <app-partners-section [partners]="(workshop$ | async)?.partners"
   [sponsorsCallMail]="(workshop$ | async)?.sponsorsCallMail">
-</app-partners-section>
+</app-partners-section> -->
 
 <app-patreon></app-patreon>
