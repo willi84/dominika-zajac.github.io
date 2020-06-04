@@ -10,13 +10,12 @@
             </div>
         </div>
     </div>
-
-    <div class="partners-container" *ngIf="partners">
+    <div class="partners-container">
         <h4 class="partners-title">With support of</h4>
         <div class="partners-list">
             <div class="partner-logo-section" *ngFor="let partner of partners">
                 <a href="{{partner.link}}" target="_blank">
-                    <img src="{{partner.logo}}" />
+                    <img src="{{partner.imageUrl}}" />
                 </a>
             </div>
         </div>

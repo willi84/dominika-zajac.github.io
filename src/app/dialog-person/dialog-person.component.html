@@ -3,12 +3,12 @@
   <h2>{{data.title}}, {{data.company}}</h2>
 </div>
 <div mat-dialog-content>
-  <p *ngIf="data.description" class="person-description">{{data.description}}</p>
-  <hr>
+  <!-- <p *ngIf="data.bio" class="person-description">{{data.bio}}</p> -->
+  <!-- <hr> -->
   <div class="person-details">
-    <div class="img" [style.backgroundImage]="'url(' + data.photo + ')'"></div>
+    <div class="img" [style.backgroundImage]="'url(/assets/data/workshops/' + data.thumbnailUrl + ')'"></div>
     <div class="about">
-      <p [innerText]="data.about"></p>
+      <p [innerText]="data.bio"></p>
       <ul class="social">
         <li *ngIf="data.github">
           <a href="{{data.github}}" target="_blank">

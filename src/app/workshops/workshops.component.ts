@@ -1,9 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute, Router, ROUTES } from '@angular/router';
-import { ScullyRoutesService, ScullyRoute } from '@scullyio/ng-lib';
-import { Observable } from 'rxjs';
-
-declare var ng: any;
+import { Component, ViewEncapsulation } from '@angular/core';
+import { ScullyRoutesService, TransferStateService } from '@scullyio/ng-lib';
+import { HttpClient } from '@angular/common/http';
+import { switchMap, share } from 'rxjs/operators';
 
 @Component({
   selector: 'app-workshops',
@@ -13,19 +11,29 @@ declare var ng: any;
   encapsulation: ViewEncapsulation.Emulated
 
 })
-export class WorkshopsComponent implements OnInit {
-  ngOnInit() { }
+export class WorkshopsComponent {
 
   workshop$;
 
-  constructor(private router: Router, private route: ActivatedRoute, private srs: ScullyRoutesService) {
-    console.log(this.srs.getCurrent());
-    this.workshop$ = (this.srs.getCurrent() as Observable<ScullyRoute>);
+  constructor(private srs: ScullyRoutesService, private transferStateService: TransferStateService, private http: HttpClient) {
+    this.workshop$ = this.srs.getCurrent().pipe(
+      switchMap((route) => {
+        return  this.transferStateService.useScullyTransferState(
+          'workshop',
+          this.getWorkshops(route.route)
+        );
+      }),
+      share()
+    );
   }
 
-  // openLink(link: string) {
-  //   link = link.indexOf("http") > -1 ? link : `http://${link}`;
-  //   window.open(link, "_blank");
-  // }
+  getWorkshops(route) {
+    return this.http.get('/assets/data' + route + '.json');
+  }
+
+  openLink(link: string) {
+    link = link.indexOf("http") > -1 ? link : `http://${link}`;
+    window.open(link, "_blank");
+  }
 
 }

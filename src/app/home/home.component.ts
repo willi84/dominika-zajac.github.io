@@ -22,11 +22,11 @@ export class HomeComponent implements OnInit {
     private transferStateService: TransferStateService, private http: HttpClient) {
        this.upcomingWorkshop$ = this.transferStateService.useScullyTransferState(
                 'workshop',
-                this.getOneJson()
+                this.getWorkshops()
             );
     }
    
-  getOneJson() {
+  getWorkshops() {
     return this.http.get('/assets/data/workshops.json');
   }
 
