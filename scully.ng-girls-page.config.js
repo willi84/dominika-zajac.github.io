@@ -4,19 +4,20 @@ exports.config = {
     projectName: 'ng-girls-page',
     outDir: './dist/static',
     routes: {
-        '/blog/:slug': {
-            type: 'contentFolder',
-            slug: {
-                folder: './blog'
-            }
-        },
+        // '/blog/:slug': {
+        //   type: 'contentFolder',
+        //   slug: {
+        //     folder: './blog'
+        //   }
+        // },
         '/workshops/:workshopId': {
             type: 'json',
             workshopId: {
                 url: 'http://localhost:1668/assets/data/workshops.json',
-                id: 'title',
+                id: 'route',
                 resultsHandler: function (raw) {
-                    return raw.map(function (a) { return a.title; });
+                    console.log(raw);
+                    return raw.map(function (a) { return a.route; });
                 },
             },
             postRenderers: ['addFlex'],

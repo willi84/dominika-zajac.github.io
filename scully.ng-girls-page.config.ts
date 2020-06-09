@@ -15,9 +15,9 @@ exports.config = {
       type: 'json',
       workshopId: {
         url: 'http://localhost:1668/assets/data/workshops.json',
-        id: 'title',
+        id: 'route',
         resultsHandler: function (raw) {
-          return raw.map(a => a.title);
+          return raw.map(a => a.route);
         },
       },
       postRenderers: ['addFlex'],

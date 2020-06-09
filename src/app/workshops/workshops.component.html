@@ -1,19 +1,19 @@
-<app-hero-section [sectionBg]="(workshop$ | async)?.heroImage">
+<ng-container *ngIf="workshop$ | async as workshop"><app-hero-section [sectionBg]="workshop.background">
   <p class="hero-description">
-    {{(workshop$ | async)?.date}}, {{(workshop$ | async)?.location}}
-  </p> -->
-  <button class="btn" *ngIf="(workshop$ | async)?.participantsForm as link" (click)="openLink(link)">
+    {{workshop.eventDate}}, {{workshop.location}}
+  </p>
+  <button class="btn" *ngIf="workshop.applicationForm as link" (click)="openLink(link)">
     APPLY FOR THE WORKSHOP
   </button>
 
-  <button class="btn" *ngIf="(workshop$ | async)?.mentorsForm as link" (click)="openLink(link)">
+  <button class="btn" *ngIf="workshop.mentorsForm as link" (click)="openLink(link)">
     CALL FOR MENTORS
   </button>
 </app-hero-section>
 
 
 <div class="content-wrapper workshop-description">
-  <h1># ngGirls @ Krakow </h1>
+  <h1>{{workshop.descriptionTitle}}</h1>
 
   <span>
     We believe that the IT industry will greatly benefit from bringing more women into technology.
@@ -83,20 +83,17 @@
     </div>
   </div>
 
-
-
-
-
-
-  Don't be shy, just contact us
+ <span> Don't be shy, just contact us</span>
 </div>
 
 
 
-<app-team-section [team]="(workshop$ | async)?.mentors" [title]="'Meet the Mentors'" [showPopups]="true">
+<app-team-section [team]="workshop.mentors" [title]="'Meet the Mentors'" [showPopups]="true">
 </app-team-section>
 
-<app-partners-section [partners]="(workshop$ | async)?.partners">
+<app-partners-section [isDjangoLabelVisible]=true [partners]="workshop.partners">
 </app-partners-section>
 <!-- [sponsorsCallMail]="(workshop$ | async)?.sponsorsCallMail" -->
 <app-patreon></app-patreon>
+
+</ng-container>

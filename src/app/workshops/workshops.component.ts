@@ -28,7 +28,9 @@ export class WorkshopsComponent {
   }
 
   getWorkshops(route) {
-    return this.http.get('/assets/data' + route + '.json');
+    //TODO - refactor the path in a proper way
+    let workshop = route.split('/');
+    return this.http.get('/assets/data/workshops/' + workshop[workshop.length - 1] + '/' + workshop[workshop.length - 1] + '.json');
   }
 
   openLink(link: string) {
