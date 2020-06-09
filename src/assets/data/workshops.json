@@ -1,27 +1,28 @@
-[{
-  "id": 1,
-  "title": "australia",
-  "background": "assets/krakow/krakow.jpg",
-  "date": "Saturday May 16th, 2020",
-  "location": "Online",
-  "archived": "false",
-  "route":"australia"
-},
-{
-  "id": 2,
-  "title": "ngVikings",
-  "background": "assets/krakow/krakow.jpg",
-  "date": "Saturday May 23rd, 2020",
-  "location": "Online",
-  "archived": "false",
-  "route":"ngVikings"
-},
+[
 {
   "id": 2,
   "title": "Budapest",
-  "background": "assets/krakow/krakow.jpg",
-  "date": "Saturday June 8th, 2020",
+  "background": "assets/data/workshops/budapest-2020/budapest.jpg",
+  "date": "June 27th, 2020",
+  "location": "Budapest",
+  "archived": "false",
+  "route":"budapest-2020"
+},
+{
+  "id": 2,
+  "title": "India ONLINE",
+  "background": "assets/data/workshops/india-2020/india.jpg",
+  "date": "July 4th, 2020",
   "location": "Online",
   "archived": "false",
-  "route":"budapest"
+  "route":"india-2020"
+},
+{
+  "id": 2,
+  "title": "Kansas City Online",
+  "background": "assets/data/workshops/kansas-2020/kansas-city.jpg",
+  "date": "July 25th, 2020",
+  "location": "Online",
+  "archived": "false",
+  "route":"kansas-2020"
 }]
