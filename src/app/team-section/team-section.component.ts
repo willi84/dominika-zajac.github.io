@@ -22,12 +22,8 @@ export class TeamSectionComponent implements OnInit {
   openDialog(person): void {
     if (!this.showPopups) return;
     const dialogRef = this.dialog.open(DialogPersonComponent, {
-      width: '740px',
-      data: person
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      data: person,
+      autoFocus: false
     });
   }
 
