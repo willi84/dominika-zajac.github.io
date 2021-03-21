@@ -6,6 +6,11 @@
             "statusCode": 301
         },
         {
+            "route": "/sample",
+            "serve": "/sample/index.html",
+            "statusCode": 301
+        },
+        {
             "route": "/*",
             "serve": "/index.html",
             "statusCode": 200
