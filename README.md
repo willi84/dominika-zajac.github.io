@@ -1,3 +1,5 @@
+* test url: https://orange-pond-046cb2d03.azurestaticapps.net/
+
 # new ngGirls page with Scully
 Repository's goal is to rewrite current ng-girls page to Angular and Scully. Thanks to that it will be possible to easily add new workshop's subpage.
 
