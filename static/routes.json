@@ -6,11 +6,6 @@
             "statusCode": 301
         },
         {
-            "route": "/krakow",
-            "serve": "/workshops/krakow",
-            "statusCode": 301
-        },
-        {
             "route": "/sample",
             "serve": "/sample/index.html",
             "statusCode": 301
