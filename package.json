@@ -4,14 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build",
+    "build:app": "ng build",
+    "build": "npm run build:app && npm run scully ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
     "scully:serve": "scully serve",
-    "scully:all": "npm run build && npm run scully -- --scanRoutes  && npm run scully:serve",
-    "scully:build": "npm run build && npm run scully ",
+    "scully:all": "npm run build:app && npm run scully -- --scanRoutes  && npm run scully:serve",
+    "scully:build": "npm run buildbuild:app && npm run scully ",
     "scully:dev": "npm run scully",
     "new-event": "ng g @scullyio/init:post --metaDataFile='templates/workshop-meta.yaml' --target=workshops",
     "new-post": "ng g @scullyio/init:post --metaDataFile='templates/post-meta.yaml' --target=blog"
