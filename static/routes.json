@@ -4,6 +4,11 @@
             "route": "/krakow",
             "serve": "/workshops/krakow",
             "statusCode": 301
-        }
+        },
+        {
+            "route": "/*",
+            "serve": "/index.html",
+            "statusCode": 200
+          }
     ]
 }
