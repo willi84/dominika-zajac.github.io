@@ -6,7 +6,7 @@
     "start": "ng serve --open",
     "build:app": "ng build", 
     "build": "ng build --stats-json && npm run static",
-    "postbuild": "npm run scully && npm run sw-build",
+    "postbuild": "npm run scully",
     "build3": "ng build --output-path=dist/app && npm run static",
     "static": "cp -r static/* dist/app/",
     "build2": "npm run build:app && npm run scully ",

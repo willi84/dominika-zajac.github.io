@@ -18,5 +18,8 @@ exports.config = {
         folder: "./workshops"
       }
     }
+  },
+  puppeteerLaunchOptions: {
+    args: ['--no-sandbox']
   }
 };
