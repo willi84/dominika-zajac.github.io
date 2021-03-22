@@ -8,7 +8,7 @@
     "build": "ng build --stats-json && npm run static",
     "postbuild": "npm run scully",
     "build3": "ng build --output-path=dist/app && npm run static",
-    "static": "cp -r static/* dist/app/",
+    "static": "cp -r static/* dist/static/",
     "build2": "npm run build:app && npm run scully ",
     "test": "ng test",
     "lint": "ng lint",
