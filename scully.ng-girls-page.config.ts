@@ -1,8 +1,12 @@
+import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
 require('./extraPlugin/workshop-add-flex');
-import { ScullyConfig } from '@scullyio/scully';
 const {DisableAngular} = require('scully-plugin-disable-angular');
 
 const postRenderers = [DisableAngular];
+
+setPluginConfig(DisableAngular, 'render', {
+  removeState: true,
+});
 
 exports.config = {
   projectRoot: "./src",
